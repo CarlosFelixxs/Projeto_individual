@@ -1,0 +1,234 @@
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: VALORANT;
+    src: url('http://fonts.cdnfonts.com/css/valorant');
+}
+
+@font-face {
+    font-family: plateia;
+    src: url('http://fonts.cdnfonts.com/css/plateia');
+}
+
+@font-face {
+    font-family: DM;
+    src: url('http://fonts.cdnfonts.com/css/dm-serif-text');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+.header {
+    font-weight: bolder;
+    text-align: center;
+    font-family: VALORANT;
+    background-color: #15161f;
+    height: 90px;
+}
+
+.header h1{
+    color: #FCFEF0;
+    padding-top: 10px;
+}
+
+.header ul {
+    font-family: VALORANT;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: small;
+    color: #FCFEF0;
+}
+
+.header li {
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header li:hover {
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.header {
+    transition: 0.50s;
+}
+
+.ativo{
+    font-size: 15px;
+    text-decoration: underline !important;
+}
+
+.header a {
+    color: #FCFEF0;
+    text-decoration: none;
+}
+
+.headerFixo {
+    position: fixed;
+    background-color: #242633;
+    height: 90px;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+.banner {
+    background-image: url(../assets/imgs/banner.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    padding: 15px;
+    text-align: center;
+}
+.banner .bannerText h1{
+    padding-top: 70px;
+    margin-top: 8%;
+    font-size: 30px;
+    color: #FCFEF0;
+ 
+}
+
+.banner .bannerText .pequeno{
+    font-size: 20px;
+    font-family: plateia;
+}
+
+.banner .bannerText span{
+    font-size: 100px;
+    font-family: VALORANT;
+}
+
+.novidades {
+    background-color: whitesmoke;
+    height: 140vh;
+    padding: 20px;
+}
+
+.novidades h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: plateia !important;
+    margin-top: 3%;
+}
+
+.novidadeDesc {
+    margin-top: 5%;
+    margin-left: 7%;
+    height: 600px;
+    width: 550px;
+    padding: 25px;
+    background-color: #10141B;
+    color: #FCFEF0;
+}
+
+.novidadeText {
+    height: 700px;
+    width: 500px;
+    margin: auto;
+}
+
+.novidadeText h1 {
+    margin-top: 7%;
+    margin-bottom: 17%;
+    text-align: center;
+    font-family: DM !important;
+}
+
+.novidadeText span{
+    font-weight: bolder;
+}
+
+.novidadeText label {
+    font-family: DM;
+}
+
+.novidadeIMG {
+    height: 360px;
+    width: 600px;
+    margin-left: 50%;
+    margin-top: -37%;
+}
+
+footer {
+    background-color: #242633;
+    font-family: DM;
+    width: 100%;
+    height: auto;
+    color: #FCFEF0;
+}
+
+.conteudoFooter {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudoFooter p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.redesSociais {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.redesSociais li {
+    margin: 0 10px;
+}
+
+.redesSociais a {
+    text-decoration: none;
+    color: #FCFEF0;
+}
+
+.redesSociais a i {
+    font-size: 30px;
+    transition: 3s;
+    
+}
+.redesSociais a:hover i {
+    font-weight: bolder;
+}
+
+.botaoFooter {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.botaoFooter p {
+    font-family: valorant;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.botaoFooter span {
+    text-transform: uppercase;
+    font-weight: 200;
+}

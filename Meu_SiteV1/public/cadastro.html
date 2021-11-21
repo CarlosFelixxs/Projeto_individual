@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Página Inicial</title>
+
+    <link rel="icon" href="./assets/icon/vavaicon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+    <link href = " http://fonts.cdnfonts.com/css/dm-serif-text " rel = "stylesheet">
+    <link href = "http://fonts.cdnfonts.com/css/plateia " rel = "stylesheet" >       
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>VALORANT</h1>
+            <ul>
+                <li><a href="index2.html">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="ativo"><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="conteudoFooter">
+            <p>Feito com amor e dedicação por um aluno da BandTec ❤</p>
+            <ul class="redesSociais">
+                <li><a href="https://github.com/CarlosFelixxs"><i class="fa-fa-github-square"></i></a></li>
+                <li><a href="https://discord.gg/RC2ENsMM"><i class="fa-fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="botaoFooter">
+            <p>copyright&copy; 2021. Developed by <span>Carlos Felix ❤ </span></p>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    (() => {
+        let Inicio = document.getElementById("Inicio");
+        window.addEventListener("scroll", () => {
+            window.scrollY > 0 ? Inicio.classList.add("headerFixo") : Inicio.classList.remove("headerFixo");
+        })
+    })()
+</script>
