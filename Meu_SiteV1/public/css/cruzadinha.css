@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://wallpapercave.com/wp/wp2757868.gif);
+    font-family: monospace;
+    }
+
+    header h1{
+    text-align: center;
+    font-size: 50px;
+    }
+    
+    
+    table {
+        border: 1px lightcoral solid;
+        font-size:25px; 
+        margin-left: 130px;
+        margin: auto;
+        border-radius: 9px;
+    }
+    
+    
+    tr {
+        border: 1px lightcoral solid;
+        border-radius: 6px;
+    }
+    
+    td {
+        border: 1px lightcoral solid;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        vertical-align: center;
+        border-radius: 110px;
+    }
+    
+    button{
+        border: 0px;
+        background-color: rgb(20, 176, 228);
+        color: #ffffff;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    
+    .container{
+        width: 1100px;
+        margin: auto;
+    }
+    
+    #div_game{
+        background-color: lightblue;
+        margin: auto;
+        border-radius: 12px;
+        
+        width: 600px;
+        height: 650px;
+    }
+    
+    #div_questions{
+    background-color:lightblue;
+    width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    }
+    
+    .button{
+        margin: auto;
+        display: inline-block;
+    }
+    
+    #button_verify{
+        width: 100px;
+        margin: auto;
+    }
+    #input_answer{
+        width: 100px;
+        margin: auto;
+    }
+    
+    .deadCell{
+        background-color: lightcoral;
+    }
+    .availableCell{
+        background-color: #ffffff;
+    }
+    
+    footer{
+        height: 30%;
+        background-color: #2C3E50;
+        color: #ffffff;
+        font-size: 15px; 
+        margin-bottom: 0;
+        padding: 0;
+        bottom: 0;
+    }
+    footer p{
+        text-align: center;
+    
+    }
+    #div_information{
+        width: 500px;
+        margin: auto;
+        background-color: lightblue;
+        font-size: 20px;
+    }
+    
+    
+    #div_verifiedAnswer{
+        width: 500px;
+        height: 70px;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+        vertical-align:center;
+        margin-bottom: 20px;
+    }
+    .correctAnswer{
+        background-color: #58D68D;
+        color: #196F3D;
+        border:1px #196F3D solid;
+    }
+    .wrongAnswer{
+        background-color: #EC7063  ;
+        color: #7B241C;
+        border:1px #7B241C solid;
+    
+    }
