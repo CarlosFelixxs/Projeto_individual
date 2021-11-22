@@ -27,6 +27,8 @@
     height: 14vh;
     width: 100vw;
     border-bottom: 1px whitesmoke solid;
+    position: fixed;
+    z-index: 10000;
 }
 
 .header h1{
@@ -72,21 +74,10 @@
     text-decoration: none;
 }
 
-.headerFixo {
-    position: fixed;
-    background-color: #242633;
-    height: 90px;
-    width: 100%;
-    padding: 15px;
-    margin: 0;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
 
 .banner {
     background-image: url(../assets/imgs/banner.jpg);
-    height: 80vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;   
