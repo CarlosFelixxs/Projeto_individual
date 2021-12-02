@@ -218,8 +218,6 @@ input{
 }
 
 .armamento{
-    background-color: black;
-    height: 100vh;
     display: flex;
     align-items: center;
     border-top: 2px solid rgb(46 165 140);
@@ -249,7 +247,7 @@ input{
 
 .containeer{
     background-color: #15161f;
-    width: 97vw;
+    width: 100%;
     height: 84vh;
     display: flex;
     flex-direction: column;

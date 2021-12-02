@@ -12,21 +12,22 @@
     <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
     <link href=" http://fonts.cdnfonts.com/css/dm-serif-text " rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/plateia " rel="stylesheet">
+    <script src="./assets/js/funcoes.js"></script>
 </head>
 
-<body>
+<body onload="qualquer()">
 
     <div class="header">
         <div class="container">
             <div class="logo-header">
-                <a href="index2.html"> <img src="assets/imgs/icon-valorant.png"></a>
+                <a href="index.html"> <img src="assets/imgs/icon-valorant.png"></a>
             </div>
             <div class="navbar">
                 <ul>
                     <ul>
-                        <li><a href="index2.html">Inicio</a></li>
-                        <li><a href="#novidades">Noticias</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#novidades">Noticias</a></li>
+                        <li><a onclick="limparSessao()">Sair</a></li>
                     </ul>
                 </ul>
             </div>
@@ -35,10 +36,13 @@
     <!-- <h3>Somos em <br>
     <span id="metrica"></span></h3>
      -->
+     <div class="containeeer">
      <div class="text">
-        <h1>Seja bem-vindo!</h1>
-        <h2>Alguns dos seus agemtes!</h2>
+        <h1>Seja bem-vindo! Já somos <span id="teste"></span> Cadastros</h1>
+        <h2>Um pouco do seu arsenal!</h2>
+        <h2>Sua arma preferida é a <span id="nome_arma"></span></h2>
     </div>
+</div>
     <div class="containeer">
         <div class="content">
         <div class="slides">
@@ -51,19 +55,19 @@
 
 
             <div class="slide s1">
-                <img src="assets/sorte/funções.jpg" alt="guerreira">
+                <img src="assets/sorte/Bulldogg.png" alt="guerreira">
             </div>
             <div class="slide">
-                <img src="assets/sorte/iniciantes.jpg" alt="guerreira">
+                <img src="assets/sorte/Operator.png" alt="guerreira">
             </div>
             <div class="slide">
-                <img src="assets/sorte/jogo.jpg" alt="guerreiras">             
+                <img src="assets/sorte/Phantom.png" alt="guerreiras">             
             </div>
             <div class="slide">
-                <img src="assets/sorte/patentes.png" alt="guerreiras">
+                <img src="assets/sorte/Vandal.png" alt="guerreiras">
             </div>
             <div class="slide">
-                <img src="assets/sorte/mainn.jpg" alt="guerreiras">
+                <img src="assets/sorte/Spectre.png" alt="guerreiras">
             </div>
         </div>
 
@@ -81,3 +85,33 @@
 <!-- <script src="agentes.js"></script> -->
 
 </html>
+<script>
+    var metrica;
+    function qualquer(){
+     fetch("/usuarios/listar", {
+            method: "GET"
+        }).then(function (resposta) {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+                    metrica = json.length;
+                    teste.innerHTML = metrica;
+                    nome_arma.innerHTML = sessionStorage.ARMA;
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+    }
+</script>

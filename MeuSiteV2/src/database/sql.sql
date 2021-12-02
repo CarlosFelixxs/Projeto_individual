@@ -12,10 +12,24 @@ CREATE TABLE cadastro (
 	nome VARCHAR(50),
 	dataN DATE,
 	email VARCHAR(50) unique,
-	senha VARCHAR(50)
+	senha VARCHAR(50),
+    fkArma INT,
+    foreign key (fkArma) references Armas(idArma)
 );
+
+CREATE TABLE Armas(
+idArma INT PRIMARY KEY AUTO_INCREMENT,
+NomeArma VARCHAR(50)
+)auto_increment = 10;
 
 select * from cadastro;
 
 insert into cadastro(nome, dataN, email, senha) values 
 ('Carlos Felix', '2000-12-20', 'Rickfelix@hotmail.com', 467070);
+
+insert into Armas(NomeArma) values
+('Bulldog'),
+('Phantom'),
+('Vandal'),
+('Operator'),
+('Spectre');

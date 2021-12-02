@@ -12,16 +12,16 @@ function listar() {
 function entrar(email, senha) {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function entrar(): ", email, senha)
     var instrucao = `
-        SELECT * FROM cadastro WHERE email = '${email}' AND senha = '${senha}';
+        SELECT * FROM cadastro join armas on idArma = fkArma WHERE email = '${email}' AND senha = '${senha}';
     `;
     console.log("Executando a instrução SQL: \n"+instrucao);
     return database.executar(instrucao);
 }
 
-function cadastrar(nome, dataN, email, senha) {
-    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, dataN, email, senha);
+function cadastrar(nome, dataN, email, senha, guns) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, dataN, email, senha, guns);
     var instrucao = `
-        INSERT INTO cadastro (nome, dataN, email, senha) VALUES ('${nome}', '${dataN}', '${email}', '${senha}');
+        INSERT INTO cadastro (nome, dataN, email, senha, fkArma) VALUES ('${nome}', '${dataN}', '${email}', '${senha}', '${guns}');
     `;
     console.log("Executando a instrução SQL: \n"+instrucao);
     return database.executar(instrucao);
