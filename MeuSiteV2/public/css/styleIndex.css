@@ -1,0 +1,439 @@
+/*INICIO GLOBAL*/
+
+@font-face {
+    font-family: VALORANT;
+    src: url('http://fonts.cdnfonts.com/css/valorant');
+}
+
+@font-face {
+    font-family: plateia;
+    src: url('http://fonts.cdnfonts.com/css/plateia');
+}
+
+@font-face {
+    font-family: DM;
+    src: url('http://fonts.cdnfonts.com/css/dm-serif-text');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.containeer {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+/*INICIO GLOBAL*/
+
+.header {
+    position: fixed;
+    z-index: 1000;
+    font-weight: bolder;
+    text-align: center;
+    font-family: VALORANT;
+    background-color: #15161f;
+    height: 18vh;
+    width: 100vw;
+    border-bottom: 1px whitesmoke solid;
+    box-shadow: 0px 4px 20px 4px rgb(255 255 255 / 47%);
+}
+
+.header .container {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-header img {
+    height: 6vw;
+    cursor: pointer;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 15px;
+    color: #a0a0a0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: #c6c6c6;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+}
+
+.navbar li {
+    display: unset;
+    padding-left: 65px;
+    margin-right: 65px;
+}
+
+.navbar ul {
+    float: left;
+}
+
+.banner {
+    background-image: url(../assets/imgs/banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.bannerText h1 {
+    font-size: 30pt;
+    color: #FCFEF0;
+}
+
+.banner .bannerText .pequeno {
+    font-size: 20px;
+    font-family: plateia;
+}
+
+.banner .bannerText span {
+    font-size: 100px;
+    font-family: VALORANT;
+}
+
+.bannerLog {
+    background-image: url(../assets/imgs/reyna.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+input{
+    border-radius: 5px;
+}
+
+.espacoNovidade {
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lista-atualizacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.novidades {
+    background-color: whitesmoke;
+    height: 160vh;
+    padding: 10% 2%;
+}
+
+.novidades h1 {
+    margin-bottom: 7%;
+    text-align: center;
+    font-size: 35pt;
+    font-family: plateia !important;
+}
+
+.novidadeDesc {
+    height: auto;
+    width: 51%;
+    background-color: #10141B;
+    color: #FCFEF0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.novidadeText {
+    padding: 5% 5% 10%;
+    text-align: justify;
+    margin: auto;
+}
+
+.novidadeText h1 {
+    margin-bottom: 15%;
+    text-align: center;
+    font-family: DM !important;
+}
+
+.novidadeText span {
+    font-weight: bolder;
+}
+
+.novidadeText label {
+    font-family: DM;
+}
+
+.novidadeIMG {
+    width: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.armamento{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgb(46 165 140);
+    align-content: flex-start;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.armamento h1{
+    color: white;
+    text-align: center;
+    font-size: 32pt;
+    font-family: plateia !important;
+}
+
+.armamento span{
+    font-family: 'Plateia';
+}
+
+.armamento button{
+    font-family: 'Plateia';
+    background-color: white;
+    border-radius: 5px;
+    width: 30%;
+    height: 9%;
+}
+
+.containeer{
+    background-color: #15161f;
+    width: 97vw;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caixaSort{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    height: 60%;
+    width: 25%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: inset 2px 2px 20px 0px rgb(46 165 140);
+}
+
+#msg{
+    font-family: 'VALORANT';
+    font-size: xx-large;
+    color: rgb(46 165 140);
+    border: 2px solid black;
+}
+
+.containeeer {
+    background-image: url(../assets/imgs/Reflection-ACT-II-4k-Wide_4-2-1536x864-1.png);
+    display: flex;
+    width: 100%;
+    height: 117vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 10%;
+}
+
+.containeeer h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Plateia';
+    font-size: 35pt;
+}
+
+.content{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+label{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+label:hover{
+    background-color: #fff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.content .slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+footer {
+    padding: 1%;
+    background-color: #242633;
+    font-family: DM;
+    width: 100%;
+    padding-top: 1;
+    height: auto;
+    /* margin-top: 6%; */
+    color: #FCFEF0;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-top: 1px solid white;
+}
+
+.conteudoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudoFooter p {
+    font-size: 14pt;
+}
+
+.redesSociais {
+    font-size: 20pt;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.redesSociais li {
+    margin: 0 10px;
+}
+
+.redesSociais a {
+    text-decoration: none;
+    color: #FCFEF0;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.redesSociais a i {
+    font-size: 30px;
+    transition: 3s;
+}
+
+.redesSociais a:hover i {
+    font-weight: bolder;
+}
+
+.fimFooter {
+    width: 100%;
+    text-align: center;
+}
+
+.fimFooter p {
+    font-family: valorant;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.fimFooter span {
+    text-transform: uppercase;
+    font-weight: 200;
+}

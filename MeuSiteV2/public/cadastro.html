@@ -6,16 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AcquaTec | Página Inicial</title>
+    <title>VALORANT | Cadastro</title>
 
     
     <script src="./assets/js/funcoes.js"></script>
 
     <link rel="icon" href="./assets/icon/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleCadastro.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="./assets/icon/vavaicon.png">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
     <link href=" http://fonts.cdnfonts.com/css/dm-serif-text " rel="stylesheet">
@@ -26,20 +25,19 @@
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
 
     <!--header inicio-->
     <div class="header">
         <div class="container">
             <div class="logo-header">
-                <a href="index2.html"> <img src="assets/imgs/icon-valorant.png"></a>
+                <a href="index.html"> <img src="assets/imgs/icon-valorant.png"></a>
             </div>
             <div class="navbar">
                 <ul>
                     <ul>
-                        <li><a href="#banner">Inicio</a></li>
-                        <li><a href="#novidades">Noticias</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#novidades">Noticias</a></li>
                         <li><a href="login.html">Login</a></li>
                     </ul>
                 </ul>
@@ -48,8 +46,8 @@
     </div>
     <!--header fim-->
 
-    <div class="banner-login ">
-        <div class="container ">
+    <div class="banner-login">
+        <div class="container">
             <div class="card medio">
                 <h2>Bem-vindo!</h2>
                 <div class="formulario">
@@ -57,14 +55,14 @@
                         Nome:
                         <input name="nome" type="text" placeholder="Ada Lovelace">
                         <br>
+                        Data de Nascimento:
+                        <input name="dataN" type="text" placeholder="aaaa-mm-dd">
+                        <br>
                         E-mail:
                         <input name="email" type="text" placeholder="meuemail@provedor.com">
                         <br>
                         Senha:
                         <input name="senha" type="password" placeholder="******">
-                        <br>
-                        Confirmação da Senha:
-                        <input name="confirmacao-senha" type="password" placeholder="******">
                         <br>
                         <button class="btn">Cadastrar</button>
                     </form>
@@ -84,7 +82,6 @@
     <footer>
         <div class="container">
             <div class="conteudoFooter">
-                <p>Feito com amor e dedicação por um aluno da BandTec ❤</p>
                 <ul class="redesSociais">
                     <a href="" class="boton-redes linkedin fab fa-linkedin"><i class="icon-linkedin"></i></a>
                     <a href="" class="boton-redes github fab fa-github"><i class="icon-github"></i></a>
@@ -115,25 +112,25 @@
         var formulario = new URLSearchParams(new FormData(document.getElementById("form_cadastro")));
 
         var nome = formulario.get("nome");
+        var dataN = formulario.get("dataN")
         var email = formulario.get("email");
         var senha = formulario.get("senha");
-        var confirmacaoSenha = formulario.get("confirmacao-senha");
 
         // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
-        if (nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
+        if (nome == "" || dataN == ""|| email == "" || senha == "") {
             
             window.alert("Preencha todos os campos para prosseguir!");
             if (nome == "")  {
                 console.log('nome está em branco')
             }
+            if (dataN == "" )  {
+                console.log('data está em branco')
+            }    
             if (email == "" )  {
                 console.log('email está em branco')
             }
             if (senha == "" )  {
                 console.log('senha está em branco')
-            }
-            if (confirmacaoSenha == "" )  {
-                console.log('confirmacaoSenha está em branco')
             }
             finalizarAguardar();
             return false;
@@ -145,12 +142,6 @@
             return false;
         }
         
-        if (senha != confirmacaoSenha) {
-            window.alert("As senhas inseridas devem ser iguais para prosseguir!");
-            finalizarAguardar();
-            return false;
-        }
-
         fetch("/usuarios/cadastrar", {
             method: "POST",
             body: formulario

@@ -1,0 +1,272 @@
+/*INICIO GLOBAL*/
+
+@font-face {
+    font-family: VALORANT;
+    src: url('http://fonts.cdnfonts.com/css/valorant');
+}
+
+@font-face {
+    font-family: plateia;
+    src: url('http://fonts.cdnfonts.com/css/plateia');
+}
+
+@font-face {
+    font-family: DM;
+    src: url('http://fonts.cdnfonts.com/css/dm-serif-text');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.containeer {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+/*INICIO GLOBAL*/
+
+.header {
+    position: fixed;
+    z-index: 1000;
+    font-weight: bolder;
+    text-align: center;
+    font-family: VALORANT;
+    background-color: #15161f;
+    height: 18vh;
+    width: 100vw;
+    border-bottom: 1px rgb(255 255 255) solid;
+    box-shadow: 1px 3px 25px 8px rgb(253 71 85);
+}
+
+.header .container {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-header img {
+    height: 6vw;
+    cursor: pointer;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 15px;
+    color: #a0a0a0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: #c6c6c6;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+}
+
+.navbar li {
+    display: unset;
+    padding-left: 100px;
+    margin-right: 60px;
+}
+
+.navbar ul {
+    float: left;
+}
+
+.banner-login {
+    color: black;
+    display: flex;
+    /* width: 98vw; */
+    height: 100vh;
+}
+
+.banner-login .container {
+    background-image: url(../assets/imgs/reyna12.jpg);
+    background-size: cover;
+    height: 84vh;
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container h2{
+    font-family: 'VALORANT';
+    font-size: large;
+}
+
+.banner-login .card {
+    background-color: #fff;
+    opacity: 80%;
+    height: 50vh;
+    border: 2px solid rgb(252 71 84);
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 25px 8px rgb(0 0 0);
+}
+
+.banner-login a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner-login #div_erros_login {
+    margin-top: 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* FORMULARIO */
+
+input {
+    height: 25px;
+    border: 2px solid #212124;
+    border-radius: 5px;
+    box-shadow: 0px 4px 7px rgb(253 71 85);
+}
+
+.btn {
+    font-family: 'VALORANT';
+    border-radius: 5px;
+    font-weight: 20%;
+    border: 2px solid #212124;
+    font-size: 100%;
+    color: black;
+    background-color: rgb(253 71 85);
+    width: 110px;
+    height: 30px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.loading-div {
+    width: 50px;
+    /* border: 3px solid pink; */
+    margin: auto;
+    display: none;
+}
+
+.loading-div img {
+    height: 50px;
+    width: 50px;
+}
+
+footer {
+    background-color: #242633;
+    border-top: 9px solid white;
+    font-family: DM;
+    width: 100%;
+    height: auto;
+    color: #FCFEF0;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.conteudoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudoFooter p {
+    font-size: 14pt;
+}
+
+.redesSociais {
+    font-size: 20pt;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.redesSociais li {
+    margin: 0 10px;
+}
+
+.redesSociais a {
+    text-decoration: none;
+    color: #FCFEF0;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.redesSociais a i {
+    font-size: 30px;
+    transition: 3s;
+}
+
+.redesSociais a:hover i {
+    font-weight: bolder;
+}
+
+.fimFooter {
+    width: 100%;
+    text-align: center;
+}
+
+.fimFooter p {
+    font-family: valorant;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.fimFooter span {
+    text-transform: uppercase;
+    font-weight: 200;
+}

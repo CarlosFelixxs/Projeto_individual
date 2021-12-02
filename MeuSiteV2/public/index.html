@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT | Página Inicial</title>
+    <script src="./assets/js/funcoes.js"></script>
+    <link rel="icon" href="./assets/icon/vavaicon.png">
+    <link rel="stylesheet" href="./css/styleIndex.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+    <link href=" http://fonts.cdnfonts.com/css/dm-serif-text " rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/plateia " rel="stylesheet">
+    <!-- TODOS OS ICONS DA TELA -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- FIM TODOS OS ICONS DA TELA -->
+</head>
+
+<body>
+<div class="header">
+        <div class="container">
+            <div class="logo-header">
+                <a href="index.html"> <img src="assets/imgs/icon-valorant.png"></a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <ul>
+                        <li><a href="#banner">Inicio</a></li>
+                        <li><a href="#novidades">Noticias</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="banner">
+        <div class="banner">
+            <div class="bannerText">
+                <h1><span class="pequeno">Um jogo de tiro tático 5x5 com personagens originais</span>
+                    <br><span>VALORANT</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="novidades" class="novidades">
+
+        <div class="container">
+            <h1>Atualizações Recentes</h1>
+            <div class="lista-atualizacao">
+                <div class="espacoNovidade">
+
+                    <div class="novidadeDesc">
+                        <div class="novidadeText">
+                            <h1>A chegada de um novo sentinela!</h1>
+                            <label>
+                            <h2>Bem vestido e armado até os dentes,o criador de armas francês <span>Chamber</span>
+                                coloca os inimigos para correr com uma precisão mortal.
+                                Use e abuse do arsenal personalizado dele para segurar
+                                posições e abater inimigos de longe, criando a defesa
+                                perfeita para qualquer plano.
+                                <br><br>
+
+                                Chamber chega com uma proposta de ser um Sentinela de grande impacto,
+                                principalmente no que tange a necessidade de defender os Spike Sites.
+                                Seu kit de habilidades possui gadgets capazes de retardar os jogadores
+                                em um determinado alcance. Além disso, é possível utilizar âncoras para
+                                se teletransportar para outros pontos do mapa.
+                            </h2>
+                        </label>
+                        </div>
+                    </div>
+
+                    <img class="novidadeIMG" src="assets/imgs/chambergif.gif">
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <section id="armamento" class="armamento">
+        <div class="containeer">
+            <h1>Veja qual sera a sua primeira arma, no segundo round!</h1>
+            <div class="caixaSort">
+                <span>Clique e descubra:</span>
+                <button onclick="sort()">Sortear</button>
+                <div id="msg">
+    <!-- <img id="bull" src="assets/sorte/Bulldogg.png">
+    <img id="ope" src="assets/sorte/Operator.png">
+    <img id="ph" src="assets/sorte/Phantom.png">
+    <img id="sp" src="assets/sorte/Spectre.png">
+    <img id="van" src="assets/sorte/Vandal.png"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="containeeer">
+        <h1>Para iniciantes!!</h1>
+        <div class="content">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <input type="radio" name="slide" id="slide5">
+    
+    
+    
+                <div class="slide s1">
+                    <img src="assets/sorte/funções.jpg" alt="guerreira">
+                </div>
+                <div class="slide">
+                    <img src="assets/sorte/iniciantes.jpg" alt="guerreira">
+                </div>
+                <div class="slide">
+                    <img src="assets/sorte/jogo.jpg" alt="guerreiras">             
+                </div>
+                <div class="slide">
+                    <img src="assets/sorte/patentes.png" alt="guerreiras">
+                </div>
+                <div class="slide">
+                    <img src="assets/sorte/mainn.jpg" alt="guerreiras">
+                </div>
+            </div>
+    
+                <div class="navigation">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+    
+            </div>
+        </div>
+
+    <footer>
+        <div class="container">
+            <div class="conteudoFooter">
+                <ul class="redesSociais">
+                    <a href="" class="boton-redes linkedin fab fa-linkedin"><i class="icon-linkedin"></i></a>
+                    <a href="" class="boton-redes github fab fa-github"><i class="icon-github"></i></a>
+                    <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
+                </ul>
+            </div>
+            <div class="fimFooter">
+                <p>copyright&copy; 2021. Developed by <span>Carlos Felix ❤ </span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    function sort() {
+var sortestilos = ['Bulldog','Operator','Phantom','Vandal','Spectre'];
+var numsort = Number(Math.random() * 4).toFixed();
+msg.innerHTML = `${sortestilos[numsort]}`;
+}
+</script>
+ 

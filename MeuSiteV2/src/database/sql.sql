@@ -3,14 +3,19 @@
 -- ter este arquivo aqui não significa que a tabela em seu BD estará como abaixo!
 
 /* para workbench - local - desenvolvimento */
-CREATE DATABASE acquatec;
+CREATE DATABASE VALORANT;
 
-USE acquatec;
+USE VALORANT;
 
-CREATE TABLE usuario (
-	id INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE cadastro (
+	idCadastro INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
-	email VARCHAR(50),
+	dataN DATE,
+	email VARCHAR(50) unique,
 	senha VARCHAR(50)
 );
 
+select * from cadastro;
+
+insert into cadastro(nome, dataN, email, senha) values 
+('Carlos Felix', '2000-12-20', 'Rickfelix@hotmail.com', 467070);

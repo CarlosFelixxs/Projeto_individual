@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcquaTec | Página Inicial</title>
+    <title>VALORANT | Login</title>
 
     <script src="./assets/js/funcoes.js"></script>
 
     <link rel="icon" href="./assets/icon/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="./assets/icon/vavaicon.png">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styleLogin.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
     <link href=" http://fonts.cdnfonts.com/css/dm-serif-text " rel="stylesheet">
@@ -32,14 +31,14 @@
     <div class="header">
         <div class="container">
             <div class="logo-header">
-                <a href="index2.html"> <img src="assets/imgs/icon-valorant.png"></a>
+                <a href="index.html"> <img src="assets/imgs/icon-valorant.png"></a>
             </div>
             <div class="navbar">
                 <ul>
                     <ul>
-                        <li><a href="#banner">Inicio</a></li>
-                        <li><a href="#novidades">Noticias</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#novidades">Noticias</a></li>
+                        <li><a href="cadastro.html">cadastro</a></li>
                     </ul>
                 </ul>
             </div>
@@ -50,7 +49,7 @@
     <div class="banner-login">
         <div class="container">
             <div class="card medio">
-                <h2>Olá de volta!</h2>
+                <h2>Bom te ver denovo!</h2>
                 <div class="formulario">
                     <form id="form_login" method="post" onsubmit="return entrar()">
                         E-mail:
@@ -82,7 +81,6 @@
     <footer>
         <div class="container">
             <div class="conteudoFooter">
-                <p>Feito com amor e dedicação por um aluno da BandTec ❤</p>
                 <ul class="redesSociais">
                     <a href="" class="boton-redes linkedin fab fa-linkedin"><i class="icon-linkedin"></i></a>
                     <a href="" class="boton-redes github fab fa-github"><i class="icon-github"></i></a>
@@ -159,7 +157,7 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "./dashboard/dashboard.html";
+                        window.location = "agentes.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
